@@ -1,0 +1,146 @@
+<link rel="stylesheet" href="style.css">
+<title>Tailwind Template</title>
+<head>
+<div class="bg-gray-100">
+
+<!-- NAVBAR COMPONENT-->
+<div class="bg-gray-900 mix-blend-multiply max-w-full max-h-72">
+  <div class="max-w-full px-2 sm:px-6 lg:px-0">
+    <div class="h-15">
+      <div class="absolute inset-y-0 left-0 sm:hidden">
+      </div>
+      </div>
+      </div>
+  
+<!-- NEW STORY LOGO-->
+      <div class="flex flex-shrink-0 flex-row mx-auto sm:px-32 xl:ml-32 2xl:ml-56 justify-items-center p-5">
+        <div class="flex flex-1">
+          <img class="flex flex-shrink-0 block lg:hidden h-5 w-auto " src="img/logo.png" alt="Workflow">
+          <img class="flex flex-shrink-0 hidden lg:block h-5 w-auto" src="img/logo.png" alt="Workflow">
+        </div>
+
+<!-- NAVBAR LINKS -->
+        <nav class="max-w-full flex flex-row-reverse hidden md:hidden lg:hidden lg:mr-16 xl:mr-32 2xl:mr-56">
+          <div class="items-stretch space-x-6">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-700 text-white px-5 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">My Campaigns</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Donation History</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Tax Receipts</a>
+          </div>
+        </div>
+      </nav>
+
+  </div>
+</head>
+
+<!--HEADER / BANNER -->
+<div class="relative bg-gray-800">
+  <div class="absolute inset-0">
+    <img class="w-full h-full object-cover" src="img/home-banner.png" alt="">
+    <div class="absolute inset-0 bg-gray-300 mix-blend-multiply" aria-hidden="true"></div>
+  </div>
+  <div class="relative max-w-7xl h-80 mx-auto py-24 px-4 sm:py-32 sm:px-32 lg:px-8 lg:ml-24 xl:ml-56 2xl:ml-80">
+    <h1 class="text-4xl font-semibold tracking-wider text-white whitespace-nowrap">A home changes everything.</h1>
+  </div>
+</div>
+
+<!-- SET A FUNDRAISING GOAL -->
+<div class="max-w-5xl sm:mx-10 md:mx-18 lg:mx-auto mt-8 mb-8 px-10 py-10 sm:px-6 bg-white rounded-lg">
+  <div class="max-w-5xl mx-20">
+    <div>
+      <label for="set-fundraising-goal" class="block text-md font-medium text-gray-700 mb-3">
+        Set a fundraising goal
+      </label>
+      <p class="text-sm font-normal text-gray-400 mb-6">Each home costs $6,500 to build. But you can create any goal amount with confidence knowing 100% of the funds raised will go directly to building homes for families in need.</p>
+      <class class="mt-1 flex rounded-md shadow-sm">
+        <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-300 sm:text-md sm:font-bold sm:text-white">
+          $
+        </span>
+        <input type="text" name="set-fundraising-goal" id="set-fundraising-goal" class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-gray-500 focus:border-gray-500 sm:text-md border-gray-300 text-gray-100" placeholder="$6,500"></class>
+    </div>
+  </div>
+</div>
+
+<!-- WRITE A PERSONAL NOTE -->
+<div class="max-w-5xl sm:mx-10 md:mx-18 lg:mx-auto mt-8 mb-8 px-10 py-10 sm:px-6 bg-white rounded-lg">
+  <div class="max-w-5xl mx-20">
+      <label for="write-personal-note" class="block text-md font-medium text-gray-700 mb-3">
+        Write a personal note
+      </label>
+      <p class="text-sm font-normal text-gray-400 mb-6">Personalize your campaign by sharing why you’re raising funds and how your friends can make a difference. If left blank, your page will show the message below.</p>
+      <div class="mt-1">
+        <textarea id="about" name="about" rows="5" class="shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-full sm:text-sm border border-gray-300 rounded-md mb-4"></textarea>
+      </div>
+      <p class="mt-2 text-sm text-gray-400 italic">* Default message: 100% of your donation to ____'s Campaign will go directly to building homes in Latin America for families in need.</p>
+    </div>
+  </div>
+
+<!-- UPDATE YOUR AVATAR -->
+<div class="max-w-5xl sm:mx-10 md:mx-18 lg:mx-auto mt-8 mb-8 px-10 py-10 sm:px-6 bg-white rounded-lg">
+  <div class="max-w-5xl mx-20">
+    <label for="update-avatar" class="block text-md font-medium text-gray-700 mb-3">
+      Update your avatar
+    </label>
+    <p class="text-sm font-normal text-gray-400 mb-6">We use Gravatar for your avatar. For any updates, please use their services.</p>
+    <div class="mt-1 flex items-center">
+      <span class="h-18 w-18 rounded-full overflow-hidden bg-gray-100">
+        <img class="h-full w-full text-gray-300" src="img/default-avatar.png" fill="currentColor" viewBox="0 0 24 24">
+        </img>
+      </span>
+      <p class="ml-4 text-sm font-normal text-gray-400 mb-2">This is your default avatar. It will appear above your personal note.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CHOOSE YOUR COVER PHOTO -->
+<div class="max-w-5xl sm:mx-10 md:mx-18 lg:mx-auto mt-8 mb-8 px-10 py-10 sm:px-6 bg-white rounded-lg">
+  <div class="max-w-5xl mx-20">
+    <div>
+      <label class="block text-md font-medium text-gray-700 mb-3">
+        Choose one of our cover photos
+      </label>
+      <div class="flex auto">
+        <div class="space-y-10">
+        
+            <label for="select-photo" class="relative cursor-pointer bg-white rounded-md font-medium text-gray-600 hover:text-gray-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gray-500">
+              <img class="flex w-auto h-auto px-2 py-2 border-4 border-blue-300 border-solid rounded-md" src="img/boy-and-mom.png">
+              <input id="select-photo-1" name="select-photo-1" type="file" class="sr-only">
+            </label>
+        </div>
+      
+          <label for="select-photo" class="relative cursor-pointer bg-white rounded-md font-medium text-gray-600 hover:text-gray-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gray-500">
+            <img class="w-auto h-auto px-2 py-2" src="img/boy.png">
+            <input id="select-photo-2" name="select-photo-2" type="file" class="sr-only">
+          </label>
+
+          <label for="select-photo" class="relative cursor-pointer bg-white rounded-md font-medium text-gray-600 hover:text-gray-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gray-500">
+            <img class="w-auto h-auto px-2 py-2" src="img/girl.png">
+            <input id="select-photo-2" name="select-photo-2" type="file" class="sr-only">
+          </label>
+
+          <label for="select-photo" class="relative cursor-pointer bg-white rounded-md font-medium text-gray-600 hover:text-gray-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gray-500">
+            <img class="w-auto h-auto px-2 py-2" src="img/homes.png">
+            <input id="select-photo-2" name="select-photo-2" type="file" class="sr-only">
+          </label>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- BUTTONS -->
+<div class="flex justify-center">
+  <button type="back-button" class="bg-white py-4 sm:px-16 md:px-24 lg:px-36 xl:px-36 2xl:px-40 border border-gray-300 rounded-md shadow-sm sm:text-sm md:text-lg font-medium text-blue-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+    BACK TO CAMPAIGNS
+  </button>
+  <button type="submit-button" class="ml-3 inline-flex justify-center py-4 sm:px-16 md:px-24 lg:px-36 xl:px-36 2xl:px-40 border border-transparent shadow-sm sm:text-sm md:text-lg font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+    START MY CAMPAIGN
+  </button>
+</div>
+</div>
+
+      
+
