@@ -1,13 +1,19 @@
 <link rel="stylesheet" href="style.css">
 <title>Tailwind Template</title>
+
+<div class="bg-local" style="background-image: url(img/background-1.png)">
+
 <head>
 
-
 <!-- NAVBAR COMPONENT-->
-<div class="bg-gray-900 bg-opacity-95 max-w-full">
+<div class="bg-gray-800 bg-opacity-95 max-w-full">
+<div class="">
+
+
   <div class="max-w-full px-2 sm:px-6 lg:px-0">
     <div class="h-15">
       <div class="absolute inset-y-0 left-0 sm:hidden">
+      </div>
       </div>
 
 <!-- NEW STORY LOGO-->
@@ -55,26 +61,141 @@ This example requires Tailwind CSS v2.0+
 
 
 
-      <div class="bg-white pb-16 pt-20">
-        <div class="mx-72 max-w-7xl px-44 grid grid-cols-2 lg:gap-8">
-          <div class="relative -my-12">
-            <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
+      <div class="pb-16 pt-28">
+        <div class="mx-auto max-w-7xl px-56 grid grid-cols-2">
+          <div class="relative -my-10">
+            <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2"></div>
             <div class="mx-auto max-w-md px-4">
               <div class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden">
-                <img class="object-cover lg:h-full lg:w-full" src="img/boy-and-mom.svg" alt="">
+                <img class="flex flex-shrink-0" src="img/boy-and-mom.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="-mx-14 my-20 border-solid border-2 border-gray-200 rounded-md mt-10 pl-12">
-            <div class="mx-auto px-4 max-w-2xl px-6 px-0 py-4 max-w-none">
-                <div>
-                 
-                  <p class="mx-auto text-lg font-medium text-black text-center">
+          <div class="-mx-10 my-16 border-solid border-2 border-gray-50 rounded-md mt-6">
+            <div class="bg-white mx-auto max-w-2xl max-w-none">
+
+                  <p class="bg-white pl-6 py-7 border-b-2 border-gray-50 mx-full text-lg font-medium text-black text-center tracking-wide">
                     Luke's Birthday Campaign
                   </p>
+
+                  <img class="pl-20 pt-8 -pb-10" src="img/dollar-raised.png">
+
+                  <img class="pl-6 mx-auto" src="img/progress-bar.png">
+
+                  <p class="pl-6 mx-auto text-md font-normal text-gray-500 text-center tracking-wide">
+                    GIVEN OF $12,000 GOAL
+                  </p>
+                    <div class="pl-24">
+                  <button type="button" class="mx-auto my-10 px-24 py-4 border border-transparent text-xl tracking-wider font-medium rounded-sm shadow-sm text-white font-medium bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    DONATE NOW
+                  </button>
                 </div>
-                
+                  
+                </div>
             </div>
           </div>
         </div>
       </div>
+
+
+<!-- MISSION STATEMENT -->
+    <div class="bg-none bg-transparent max-w-5xl max-h-full mx-auto">
+    <div class="bg-none bg-transparent text-center mx-10 my-20">
+      <h2 class="bg-none bg-transparent text-4xl font-normal text-gray-800 tracking-wider pb-2">Your generosity is building a world</h2>
+    
+      <h2 class="bg-none bg-transparent text-4xl font-normal text-gray-800 tracking-wider pb-2">where everyone has a home.</h2>
+      
+      </div>
+    </div>
+
+
+<!-- AVATAR + PERSONAL NOTE -->
+<div class="bg-gray-50 my-16 py-16">
+  <div class="">
+    <img class="flex justify-center h-28 w-28 mx-auto" src="img/campaign-icon-circle.png">
+    <div class="text-center">
+      <p class="max-w-xl mt-5 mx-auto text-lg text-gray-800 tracking-wider leading-relaxed">Hi, friends! It’s my birthday, and this year, I am celebrating with New Story to raise funds to build a world where everyone has a home. Join me in making a difference! Donate, share the word, and  let’s end global homelessness together!</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- TABS -->
+<div>
+  <div class="sm:hidden">
+    <label for="tabs" class="sr-only">Select a tab</label>
+    <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
+    <select id="tabs" name="tabs" class="block w-full focus:ring-blue-500 focus:border-blue-500 border-blue-300 rounded-md">
+      <option selected>About New Story</option>
+
+      <option>Recent Activity</option>
+
+    </select>
+  </div>
+  <div class="hidden sm:block">
+    <div class=".border-b-2 border-blue-500">
+      <nav class="-mb-px flex space-x-12 flex justify-center mx-auto" aria-label="Tabs">
+        <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
+        <a href="#" class=".border-b-8 border-blue-500 text-gray-500 hover:text-gray-700 hover:border-gray-300 group inline-flex items-center py-2 px-4 border-b-2 font-medium text-sm">
+          <!--
+            Heroicon name: solid/user
+
+            Current: "text-indigo-500", Default: "text-gray-400 group-hover:text-gray-500"
+          -->
+          <div class="">
+          <img class="flex justify-center mx-auto h-8 w-9" src="img/about-newstory-icon.png">
+          
+          <div class="py-4 text-md font-normal tracking-wider">About New Story</div></div>
+        </a>
+
+        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 group inline-flex items-center py-4 px-1 border-b-2 font-medium text-sm">
+          <!--
+            Heroicon name: solid/user
+
+            Current: "text-indigo-500", Default: "text-gray-400 group-hover:text-gray-500"
+          -->
+          <div class="">
+          <img class="flex justify-center mx-auto h-6 w-9" src="img/recent-activity-icon.png">
+          
+          <div class="py-4 pb-2 text-md font-normal tracking-wider">Recent Activity</div></div>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+
+
+<!-- ABOUT NEW STORY -->
+<div class="bg-white max-w-3xl max-h-full mx-auto rounded-md">
+  <div class="text-center mx-10 my-16">
+    <h2 class="text-2xl font-normal text-gray-600 tracking-wider pb-2">New story is a nonprofit providing</h2>
+    <h2 class="text-2xl font-normal text-gray-600 tracking-wider">safe housing for people who need it most.</h2>
+    <div class="text-center mx-10 my-10">
+    <h2 class="text-lg font-normal text-gray-600 tracking-wide py-2 leading-relaxed">We offer a 100% promise that every dollar given goes directly to building a home for a person without one. We also believe in bringing groundbreaking housing solutions to families who need them most. From a human-centered design curriculum to 3D printing to micro-mortgage loans, each innovative solution is shared with other teams tackling homelessness so more families can access safe housing.</h2>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- RECENT ACTIVITY
+<div class="bg-white max-w-2xl max-h-full mx-auto rounded-md">
+  <div class="text-center mx-10 my-10">
+    <h2 class="text-2xl font-normal text-gray-800 tracking-wider pb-2">New story is a nonprofit providing</h2>
+    <h2 class="text-2xl font-normal text-gray-800 tracking-wider">safe housing for people who need it most.</h2>
+<div>
+  <label for="campaign-url" class="block text-sm font-normal text-gray-700 mx-28 mt-10 bg-white">Copy the URL below for your Campaign</label>
+  <div class="flex rounded-md">
+    <div class="relative flex items-stretch flex-grow">
+      <input type="text" name="campaign-url" id="campaign-url" class="ml-28 my-6 pl-1 py-1 bg-white rounded-md shadow-sm border-gray-300 focus:ring-gray-500 focus:border-gray-500 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300" placeholder="https://impact.newstorycharity.org/campaigns/newstory">
+    </div>
+    <button type="button" class="mx-28 my-6 px-2 py-2 bg-white rounded-md shadow-sm -space-y-px -ml-px relative inline-flex items-center space-x-2 border border-gray-300 text-sm font-medium rounded-r-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-gray-300">
+
+      <img class="h-6 w-6 text-gray-400" src="img/copy-url-icon.png" alt="Worflow">
+    </button>
+  </div>
+</div>
+</div>
+</div> -->
