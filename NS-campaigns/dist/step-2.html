@@ -1,216 +1,97 @@
 <link rel="stylesheet" href="style.css">
 <title>Tailwind Template</title>
 <head>
-<div class="bg-gray-100">
+<div class="bg-gray-900">
 
 <!-- NAVBAR COMPONENT-->
-<div class="bg-gray-900 mix-blend-multiply max-w-full max-h-72">
-  <div class="max-w-full px-2 sm:px-6 lg:px-0 h-15">
+<div class="bg-gray-900 bg-opacity-95 max-w-full">
+  <div class="max-w-full px-2 sm:px-6 lg:px-0">
     <div class="h-15">
       <div class="absolute inset-y-0 left-0 sm:hidden">
-    </div>
-  </div>
-</div>
-
+      </div>
 
 <!-- NEW STORY LOGO-->
-<div class="flex flex-shrink-0 flex-row mx-auto sm:px-32 xl:ml-32 2xl:ml-56 justify-items-center p-5">
-  <div class="flex flex-1">
-    <img class="flex flex-shrink-0 block lg:hidden h-5 w-auto " src="img/logo.png" alt="Workflow">
-    <img class="flex flex-shrink-0 hidden lg:block h-5 w-auto" src="img/logo.png" alt="Workflow">
-  </div>
+      <div class="flex flex-shrink-0 flex-row ml-28 md:ml-36 lg:ml-16 xl:ml-32 2xl:ml-72 items-center justify-items-center mx-auto p-5">
+        <div class="flex flex-1">
+          <img class="flex flex-shrink-0 block lg:hidden h-5 w-auto " src="img/logo.png" alt="Workflow">
+          <img class="flex flex-shrink-0 hidden lg:block h-5 w-auto" src="img/logo.png" alt="Workflow">
+        </div>
 
 
 <!-- NAVBAR LINKS -->
-    <nav class="max-w-full flex flex-row-reverse hidden md:hidden lg:hidden lg:mr-16 xl:mr-32 2xl:mr-56">
-      <div class="items-stretch space-x-6">
+        <nav class="max-w-full flex flex-row-reverse hidden md:hidden lg:block lg:mr-16 xl:mr-32 2xl:mr-72">
+          <div class="items-stretch space-x-6">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" class="bg-gray-700 text-white px-5 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+            <a href="#" class="bg-gray-700 text-white px-5 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
 
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">My Campaigns</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">My Campaigns</a>
 
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Donation History</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Donation History</a>
 
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Tax Receipts</a>
-      </div>
-     </div>
-    </nav>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Tax Receipts</a>
+          </div>
+        </div>
+      </nav>
+
   </div>
 </head>
 
 
-<!--HEADER / BANNER -->
-<div class="relative bg-gray-800">
-  <div class="absolute inset-0">
-    <img class="w-full h-full object-cover" src="img/home-banner.png" alt="">
-      <div class="absolute inset-0 bg-gray-300 mix-blend-multiply" aria-hidden="true">
-      </div>
+<!-- HEADER: CAMPAIGN IS LIVE! -->
+<body class="bg-gray-900">  
+
+<div class="bg-white max-w-2xl max-h-full mx-auto rounded-md">
+    <div class="text-center mx-10">
+      <img class="mx-auto mt-16 pt-12 h-22 w-22 text-gray-400" src="img/campaign-icon.png" alt="Worflow">
+      <h2 class="text-lg font-medium text-gray-900 tracking-wide">Luke's Birthday Campaign is live!</h2>
+</div>
+
+    <!-- EXIT POPUP -->
+    <div class="ml-96">
+    <button type="button" class="inline-flex ml-56 -my-32 bg-white rounded-md p-1.5 text-gray-500 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-white">
+      <span class="sr-only">Dismiss</span>
+      <!-- Heroicon name: solid/x -->
+      <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </button>
+  </div>
+
+
+<!-- CAMPAIGN URL-->
+<div>
+  <label for="campaign-url" class="block text-sm font-normal text-gray-700 mx-28 mt-10 bg-white">Copy the URL below for your Campaign</label>
+  <div class="flex rounded-md">
+    <div class="relative flex items-stretch flex-grow">
+      <input type="text" name="campaign-url" id="campaign-url" class="ml-28 my-6 pl-1 py-1 bg-white rounded-md shadow-sm border-gray-300 focus:ring-gray-500 focus:border-gray-500 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300" placeholder="https://impact.newstorycharity.org/campaigns/newstory">
     </div>
-  <div class="relative max-w-7xl h-80 mx-auto py-24 px-4 sm:py-32 sm:px-32 lg:px-8 lg:ml-24 xl:ml-56 2xl:ml-80">
-  <h1 class="text-4xl font-semibold tracking-wider text-white whitespace-nowrap">A home changes everything.</h1>
+    <button type="button" class="mx-28 my-6 px-2 py-2 bg-white rounded-md shadow-sm -space-y-px -ml-px relative inline-flex items-center space-x-2 border border-gray-300 text-sm font-medium rounded-r-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-gray-300">
+      <!-- Heroicon name: solid/sort-ascending -->
+      <img class="h-6 w-6 text-gray-400" src="img/copy-url-icon.png" alt="Worflow">
+    </button>
   </div>
 </div>
 
-
-<!-- EDIT YOUR CAMPAIGN -->
-<div class="text-center mx-10">
-  <img class="mx-auto mt-6 mb-1 h-22 w-22 text-gray-400" src="img/campaign-icon.png" alt="Worflow">  
-    <h2 class="text-lg font-medium text-gray-900 tracking-wide">Let's set up your campaign!</h2>
-  </div>
-
-
-<!-- NAME YOUR CAMPAIGN -->
-<div class="max-w-5xl sm:mx-10 md:mx-18 lg:mx-auto mt-8 mb-8 px-10 py-10 sm:px-6 bg-white rounded-lg">
-  <div class="max-w-5xl mx-20">
-    <div>
-      <legend class="block text-md font-medium text-gray-700 mb-3">Enter your campaign name</legend>
-        <div class="mt-1 rounded-md shadow-sm -space-y-px">
-          <div>
-            <label for="placeholder" class="sr-only">Placeholder</label>
-            </div>
-              <div>
-              <label for="campaign-name" class="sr-only">Campaign Name</label>
-                <input type="text" name="campaign-name" id="campaign-name" class="tracking-normal focus:ring-indigo-500 focus:border-indigo-500 relative block w-full rounded-none rounded-b-md bg-transparent focus:z-10 sm:text-sm border-gray-300 font-normal text-gray-400 py-3" placeholder="i.e. Frida’s Birthday Campaign, Build Homes With Me, etc.">
-              </div>    
-            </div>
-          </fieldset>
+<!-- DASHBOARD URL-->
+<div>
+  <label for="dashboard-url" class="block text-sm font-normal text-gray-700 mx-28 mt-3 bg-white">Copy the URL below for your Dashboard</label>
+  <div class="flex rounded-md">
+    <div class="relative flex items-stretch flex-grow">
+      <input type="text" name="dashboard-url" id="dashboard-url" class="ml-28 my-6 pl-1 py-1 bg-white rounded-md shadow-sm border-gray-300 focus:ring-gray-500 focus:border-gray-500 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300" placeholder="https://donordashboard.newstorycharity.org/campaigns/new">
     </div>
+    <button type="button" class="mx-28 my-6 px-2 py-2 bg-white rounded-md shadow-sm -space-y-px -ml-px relative inline-flex items-center space-x-2 border border-gray-300 text-sm font-medium rounded-r-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-gray-300">
+      <!-- Heroicon name: solid/sort-ascending -->
+      <img class="h-6 w-6 text-gray-400" src="img/copy-url-icon.png" alt="Worflow">
+    </button>
   </div>
 </div>
 
+  
 
-<!-- SET A TIMELINE -->
-<div class="max-w-5xl sm:mx-10 md:mx-18 lg:mx-auto mt-8 mb-8 px-10 py-10 sm:px-6 bg-white rounded-lg">
-  <div class="max-w-5xl mx-20">
-    <div>
-        <legend class="block text-md font-medium text-gray-700 mb-3">Select the timeline of your campaign</legend>
-        <div class="text-sm font-normal text-gray-400 mb-6">Your campaign will deactivate after the selected timeline. Don’t worry -- you can always change your timeline.</div>
-        <div class="flex -space-x-px">
-          <div class="">
-          
-            <class class="mt-1 flex rounded-md shadow-sm">
-              <span class="inline-flex items-center px-2 rounded-l-md border border-r-0 border-gray-300 bg-gray-300 sm:text-md sm:font-bold sm:text-white">
-                <img class="" src="img/calendar-icon.png">
-              </span>
-          
-            <label for="campaign-start-date" class="sr-only">Date 1</label>
-            <input type="text" name="campaign-start-date" id="campaign-start-date" class="mx-4 tracking-wider focus:ring-indigo-500 focus:border-indigo-500 relative block w-full rounded-none rounded-bl-md bg-transparent focus:z-10 sm:text-sm font-medium border-gray-300 py-3" placeholder="10/01/21">
-          </div>
-          <div class="">
-            <class class="mt-1 flex rounded-md shadow-sm">
-              <span class="inline-flex items-center px-2 rounded-l-md border border-r-0 border-gray-300 bg-gray-300 sm:text-md sm:font-bold sm:text-white">
-                <img class="" src="img/calendar-icon.png">
-              </span>
-            <label for="campaign-end-date" class="sr-only">Date 2</label>
-            <input type="text" name="campaign-end-date" id="campaign-end-date" class="mx-4 tracking-wider focus:ring-indigo-500 focus:border-indigo-500 relative block w-full rounded-none rounded-br-md bg-transparent focus:z-10 sm:text-sm font-medium border-gray-300 py-3" placeholder="10/31/21">
-          </div>
-        </div>
-      </fieldset>
-    </div>
-  </div>
+<!-- CTA: CONTINUE TO CAMPAIGNS -->
+<div class="mt-4 pb-4">
+   <button type="submit" class="mb-10 flex mx-auto flex-shrink-0 justify-items-center sm:px-32 py-4 border border-transparent text-lg font-semibold tracking-wider rounded-sm shadow-sm text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+     <p class="uppercase">GO TO MY CAMPAIGN</p>
+   </button>
 </div>
-
-
-<!-- SET A FUNDRAISING GOAL -->
-<div class="max-w-5xl sm:mx-10 md:mx-18 lg:mx-auto mt-8 mb-8 px-10 py-10 sm:px-6 bg-white rounded-lg">
-  <div class="max-w-5xl mx-20">
-    <div>
-      <label for="set-fundraising-goal" class="block text-md font-medium text-gray-700 mb-3">
-        Set a fundraising goal
-      </label>
-      <p class="text-sm font-normal text-gray-400 mb-6">Each home costs $6,500 to build. But you can create any goal amount with confidence knowing 100% of the funds raised will go directly to building homes for families in need.</p>
-      <class class="mt-1 flex rounded-md shadow-sm">
-        <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-300 sm:text-md sm:font-bold sm:text-white">
-          $
-        </span>
-        <input type="text" name="set-fundraising-goal" id="set-fundraising-goal" class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-gray-500 focus:border-gray-500 sm:text-md border-gray-300 text-gray-500" placeholder="$6,500"></class>
-    </div>
-  </div>
-</div>
-
-
-<!-- WRITE A PERSONAL NOTE -->
-<div class="max-w-5xl sm:mx-10 md:mx-18 lg:mx-auto mt-8 mb-8 px-10 py-10 sm:px-6 bg-white rounded-lg">
-  <div class="max-w-5xl mx-20">
-      <label for="write-personal-note" class="block text-md font-medium text-gray-700 mb-3">
-        Write a personal note
-      </label>
-      <p class="text-sm font-normal text-gray-400 mb-6">Personalize your campaign by sharing why you’re raising funds and how your friends can make a difference. If left blank, your page will show the message below.</p>
-      <div class="mt-1">
-        <textarea id="personal-note" name="personal-note" rows="5" class="shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-full sm:text-md px-4 py-4 border border-gray-300 text-gray-700 rounded-md mb-4"></textarea>
-      </div>
-      <p class="mt-2 text-sm text-gray-400 italic">* Default message: 100% of your donation to ____'s Campaign will go directly to building homes in Latin America for families in need.</p>
-    </div>
-  </div>
-
-
-<!-- UPDATE YOUR AVATAR -->
-<div class="max-w-5xl sm:mx-10 md:mx-18 lg:mx-auto mt-8 mb-8 px-10 py-10 sm:px-6 bg-white rounded-lg">
-  <div class="max-w-5xl mx-20">
-    <label for="update-avatar" class="block text-md font-medium text-gray-700 mb-3">
-      Update your avatar
-    </label>
-    <p class="text-sm font-normal text-gray-400 mb-6">We use Gravatar for your avatar. For any updates, please use their services.</p>
-    <div class="mt-1 flex items-center">
-      <span class="h-18 w-18 rounded-full overflow-hidden bg-gray-100">
-        <img class="h-full w-full text-gray-300" src="img/default-avatar.png" fill="currentColor" viewBox="0 0 24 24">
-        </img>
-      </span>
-      <p class="ml-4 text-sm font-normal text-gray-400 mb-2">This is your default avatar. It will appear above your personal note.</p>
-    </div>
-  </div>
-</div>
-
-
-<!-- CHOOSE YOUR COVER PHOTO -->
-<div class="max-w-5xl sm:mx-10 md:mx-18 lg:mx-auto mt-8 mb-8 px-10 py-10 sm:px-6 bg-white rounded-lg">
-  <div class="max-w-5xl mx-20">
-    <div>
-      <label class="block text-md font-medium text-gray-700 mb-3">
-        Choose one of our cover photos
-      </label>
-      <div class="flex auto">
-        <div class="space-y-10">
-        
-            <label for="select-photo" class="relative cursor-pointer bg-white rounded-md font-medium text-gray-600 hover:text-gray-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gray-500">
-              <img class="flex w-auto h-auto px-2 py-2 border-4 border-blue-300 border-solid rounded-md" src="img/blue-home.png">
-              <input id="select-photo-1" name="select-photo-1" type="file" class="sr-only">
-            </label>
-        </div>
-      
-          <label for="select-photo" class="relative cursor-pointer bg-white rounded-md font-medium text-gray-600 hover:text-gray-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gray-500">
-            <img class="w-auto h-auto px-2 py-2" src="img/yellow-home.png">
-            <input id="select-photo-2" name="select-photo-2" type="file" class="sr-only">
-          </label>
-
-          <label for="select-photo" class="relative cursor-pointer bg-white rounded-md font-medium text-gray-600 hover:text-gray-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gray-500">
-            <img class="w-auto h-auto px-2 py-2" src="img/boy.png">
-            <input id="select-photo-2" name="select-photo-2" type="file" class="sr-only">
-          </label>
-
-          <label for="select-photo" class="relative cursor-pointer bg-white rounded-md font-medium text-gray-600 hover:text-gray-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-gray-500">
-            <img class="w-auto h-auto px-2 py-2" src="img/kids-at-home.png">
-            <input id="select-photo-2" name="select-photo-2" type="file" class="sr-only">
-          </label>
-        </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- BUTTONS -->
-<div class="flex justify-center mt-4 pb-12">
-  <button type="back-button" class="bg-white py-4 sm:px-16 md:px-24 lg:px-36 xl:px-36 2xl:px-40 border border-gray-300 rounded-md shadow-sm sm:text-sm md:text-lg font-medium text-blue-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-    BACK TO CAMPAIGNS
-  </button>
-  <button type="submit-button" class="ml-3 inline-flex justify-center py-4 sm:px-16 md:px-24 lg:px-36 xl:px-36 2xl:px-40 border border-transparent shadow-sm sm:text-sm md:text-lg font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-    START MY CAMPAIGN
-  </button>
-  </div>
-</div>
-</div>
-</div>
-
-
-      
-
+</body>
